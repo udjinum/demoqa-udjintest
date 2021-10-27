@@ -1,7 +1,7 @@
 package toolsqa;
 
 import com.codeborne.selenide.*;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
@@ -74,8 +74,8 @@ public class PracticeFormTest {
     private final SelenideElement closeButton = modalWindowContainer.$("[id=closeLargeModal]");
 
 
-    @BeforeEach
-    public void setUpBeforeAll() {
+    @BeforeAll
+    public static void setUpBeforeAll() {
         Configuration.browserSize = "1920x1080";
     }
 
